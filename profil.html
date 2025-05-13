@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diyandha.OLS - Profil Pengembang</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f7f8fc;
+        color: #333;
+      }
+
+      .navbar {
+        background-color: #da30cb;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar-logo {
+        color: white;
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .navbar-logo span {
+        color: #ffcc00;
+      }
+
+      .navbar-nav {
+        display: flex;
+        gap: 20px;
+      }
+
+      .navbar-nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+        transition: color 0.3s;
+      }
+
+      .navbar-nav a:hover {
+        color: #ffcc00;
+      }
+
+      .navbar-extra a {
+        color: white;
+        font-size: 1.4rem;
+        margin-left: 20px;
+      }
+
+      /* Tambahan untuk memberikan ruang agar konten tidak tertutup navbar */
+      body::before {
+        content: "";
+        display: block;
+        height: 100px; /* Sesuaikan dengan tinggi navbar */
+      }
+
+      section.pengembang {
+        padding: 50px 20px;
+        text-align: center;
+        background-color: #fff;
+      }
+
+      .pengembang h2 {
+        font-size: 2.8rem;
+        color: #da30cb;
+      }
+
+      .pengembang h3 {
+        font-size: 1.5rem;
+        color: #555;
+        margin-bottom: 40px;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 30px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .profile {
+        background: #f9f9f9;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .profile:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .profile a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .profile img {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 15px;
+      }
+
+      .profile p.name {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #333;
+      }
+
+      .profile p.details {
+        font-size: 0.95rem;
+        color: #666;
+        margin-top: 5px;
+      }
+
+      footer {
+        background-color: #da30cb;
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .socials a {
+        color: white;
+        font-size: 1.8rem;
+        margin: 0 15px;
+        transition: color 0.3s ease;
+      }
+
+      .socials a:hover {
+        color: #ffcc00;
+      }
+
+      .footer-contact p {
+        font-size: 1rem;
+        margin: 10px 0;
+      }
+
+      .credit {
+        margin-top: 30px;
+        font-size: 1rem;
+      }
+
+      @media (max-width: 768px) {
+        .navbar-nav {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Diyandha.<span>OLS</span></a>
+      <div class="navbar-nav">
+        <a href="home.html">Home</a>
+        <a href="tentang.html">Profil</a>
+        <a href="produk.html">Produk</a>
+        <a href="shop.html">Shop</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="profil.html">Pengembang</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#"><i data-feather="search"></i></a>
+        <a href="#"><i data-feather="shopping-cart"></i></a>
+        <a href="#"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <section class="pengembang" id="pengembang">
+      <h2>DATA DIRI PEMBUAT WEB</h2>
+      <h3>KELOMPOK 6</h3>
+      <div class="container">
+        <div class="profile">
+          <a
+            href="https://afrizaldwi22.github.io/PortofolioA/home.html"
+            target="_blank"
+          >
+            <img src="Profile/anas.jpg" alt="Afrizal Dwi S" />
+            <p class="name">AFRIZAL DWI S.</p>
+            <p class="details">Developer Frontend | Instagram: afrizaldwis.a</p>
+          </a>
+        </div>
+        <div class="profile">
+          <a href="https://www.instagram.com/gunawan.ad_/" target="_blank">
+            <img src="images/gunawan.jpg" alt="Gunawan Adi" />
+            <p class="name">GUNAWAN ADI</p>
+            <p class="details">UI Designer | Instagram: gunawan.ad_</p>
+          </a>
+        </div>
+        <div class="profile">
+          <a href="https://www.instagram.com/ananda_sabril/" target="_blank">
+            <img src="images/ananda.jpg" alt="Ananda Sabril" />
+            <p class="name">ANANDA SABRIL</p>
+            <p class="details">Backend Developer | Instagram: ananda_sabril</p>
+          </a>
+        </div>
+        <div class="profile">
+          <a href="https://www.instagram.com/annisaepr/" target="_blank">
+            <img src="images/annisa.jpg" alt="Annisa Aulia E P" />
+            <p class="name">ANNISA AULIA E P</p>
+            <p class="details">Content Creator | Instagram: annisaepr</p>
+          </a>
+        </div>
+        <div class="profile">
+          <a href="https://www.instagram.com/ailazhr_/" target="_blank">
+            <img src="images/aila.jpg" alt="Aila Zahra A" />
+            <p class="name">AILA ZAHRA AYUNDA</p>
+            <p class="details">Quality Analyst | Instagram: ailazhr_</p>
+          </a>
+        </div>
+        <div class="profile">
+          <a href="https://www.instagram.com/auliars_23/" target="_blank">
+            <img src="images/aulia.jpg" alt="Aulia Raisya" />
+            <p class="name">AULIA RAISYA SALSABILA</p>
+            <p class="details">UI/UX & QA | Instagram: auliars_23</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="socials">
+        <a href="https://www.instagram.com"><i data-feather="instagram"></i></a>
+        <a href="https://www.twitter.com"><i data-feather="twitter"></i></a>
+        <a href="https://www.facebook.com"><i data-feather="facebook"></i></a>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: diyandaols02@gmail.com</p>
+        <p>Phone: +62 875 9671 1230</p>
+      </div>
+      <div class="credit">
+        <p>Created by <a href="#">Kelompok 6</a>. | &copy; 2024/2025.</p>
+      </div>
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
